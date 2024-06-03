@@ -24,6 +24,7 @@ const schema =new mongoose.Schema({
         ref:"Courses",
     },
 ],
+ resetPassowrdExpire :Date,
 },
 {
     timestamps:true,
