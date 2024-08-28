@@ -121,7 +121,7 @@ export const forgotPassword = TryCatch(async (req, res) => {
         await sendForgotMail("E-learning", data);
         
         // Set the token expiration time
-        user.resetPasswordExpire = Date.now() + 5 * 60 * 1000;
+        user.resetPassowrdExpire = Date.now() + 5 * 60 * 1000;
         
         await user.save();
 
